@@ -192,6 +192,7 @@ public class CollectionCacheInvalidator
 
 		public AfterTransactionCompletionProcess lockCache() {
 			beforeExecutions();
+			evict();
 			return getAfterTransactionCompletionProcess();
 		}
 	}
